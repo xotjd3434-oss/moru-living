@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MORU - Furniture for everyday life</title>
+  <link rel="preconnect" href="https://images.unsplash.com/">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="data:,">
+
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner wrap">
+      <a href="index.html" class="logo">MORU.</a>
+      <nav class="nav" id="nav">
+        <a href="index.html#new">NEW</a>
+        <a href="index.html#collection">COLLECTION</a>
+        <a href="index.html#journal">JOURNAL</a>
+      </nav>
+
+      <div class="header__right">
+        
+        <button type="button" class="cart" id="openBag" aria-haspopup="dialog" aria-controls="bagDialog">BAG <b>0</b></button>
+      </div>
+
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <img class="hero__image"
+        src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2000&q=85"
+        alt="따뜻한 분위기의 모던 거실" />
+      <div class="hero__shade"></div>
+      <div class="hero__content wrap">
+        <h1>Objects for <br>slow living.</h1>
+        <p class="hero__desc">
+          오래 머물고 싶은 공간을 위한 <br>차분하고 단단한 가구를 만듭니다.
+        </p>
+        <a href="#new" class="btn btn--light">VIEW COLLECTION </a>
+      </div>
+      
+    </section>
+
+    <!-- new Arrivals -->
+    <section class="section products" id="new">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>Made for <br>everyday moments.</h2>
+          </div>
+          <a href="#new" class="text-link">VIEW ALL PRODUCTS</a>
+        </div>
+        <div class="product-grid"><article class="product-card"><a href="sub.html"><div class="product-card__image"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=85" alt="Layer Sofa 공간 연출 이미지" loading="lazy"></div><div class="product-card__info"><div><h3>Layer Sofa</h3><p>Soft beige / Fabric</p></div><strong>₩1,280,000</strong></div></a></article><article class="product-card"><a href="round-lounge.html"><div class="product-card__image"><img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=85" alt="Round Lounge 공간 연출 이미지" loading="lazy"></div><div class="product-card__info"><div><h3>Round Lounge</h3><p>Natural oak / Linen</p></div><strong>₩620,000</strong></div></a></article><article class="product-card"><a href="form-chair.html"><div class="product-card__image"><img src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=900&q=85" alt="Form Chair 공간 연출 이미지" loading="lazy"></div><div class="product-card__info"><div><h3>Form Chair</h3><p>Oak / Ivory</p></div><strong>₩320,000</strong></div></a></article><article class="product-card"><a href="low-table.html"><div class="product-card__image"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Low Table 공간 연출 이미지" loading="lazy"></div><div class="product-card__info"><div><h3>Low Table</h3><p>Walnut / Steel</p></div><strong>₩490,000</strong></div></a></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 브랜드 컬렉션 : 좌우 분할 레이아웃 -->
+    <section class="collection" id="collection">
+      <div class="collection__image">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=85"
+          alt="내추럴 인테리어 공간" />
+      </div>
+      <div class="collection__content">
+        <h2>Timeless pieces.<br>Everyday living.</h2>
+        <p>
+          유행보다 오래 남는 형태, 손끝에 닿는 자연스러운 재료. MORU의 2026 컬렉션은 집에서 보내는 평범한 시간을 조금
+          더 편안하게 만드는 것에서 시작했습니다.
+        </p>
+        <a class="btn btn--dark" href="#new">EXPLORE COLLECTION
+          
+        </a>
+        <div class="material">
+          <span>OAK</span>
+          <span>LINEN</span>
+          <span>STEEL</span>
+          <span>WOOL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature -->
+    <section class="section feature">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>Details make <br>the difference</h2>
+          </div>
+          <p class="section-copy">
+            좋은 가구는 공간을 채우기보다 <br>생활을 자연스럽게 정리합니다.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <a class="feature-card feature-card--large" href="sub.html"><img
+              src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1400&q=85"
+              alt="편안한 거실 공간" />
+            <div class="feature-card__text">
+              
+              <h3>Soft Living</h3>
+              <p>편안함이 머무는 거실</p>
+            </div>
+          </a>
+          <a class="feature-card" href="low-table.html"><img
+              src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"
+              alt="우드 테이블" />
+            <div class="feature-card__text">
+              
+              <h3>Dining Objects</h3>
+              <p>매일 사용하는 테이블</p>
+            </div>
+          </a>
+          <a class="feature-card" href="form-chair.html"><img
+              src="https://images.unsplash.com/photo-1617104551722-3b2d51366400?auto=format&fit=crop&w=900&q=85"
+              alt="조명과 의자" />
+            <div class="feature-card__text">
+              
+              <h3>Quiet Corner</h3>
+              <p>나만의 작은 휴식</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- JOURNAL -->
+    <section class="journal section" id="journal">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>Stories of<br />better living.</h2>
+          </div>
+        </div>
+        <div class="journal-grid">
+          <article>
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85"
+              alt="거실 인테리어" />
+            <p class="meta">SPACE · 6 MIN READ</p>
+            <h3>집을 더 편안하게 만드는 세 가지 기준</h3>
+            <a href="#">READ STORY</a>
+          </article>
+          <article>
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=85"
+              alt="따뜻한 집" />
+            <p class="meta">MATERIAL · 4 MIN READ</p>
+            <h3>오래 사용할수록 아름다운 소재에 대하여</h3>
+            <a href="#">READ STORY</a>
+          </article>
+          <article>
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=85"
+              alt="자연스러운 공간" />
+            <p class="meta">LIFESTYLE · 5 MIN READ</p>
+            <h3>작은 집에서도 여백을 만드는 방법</h3>
+            <a href="#">READ STORY</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-compact"><a class="footer-wordmark" href="index.html">MORU.</a><div class="footer-description"><p>Furniture for everyday life.</p><p>일상에 자연스럽게 스며드는 가구.<br>오래 머물고 싶은 공간을 만듭니다.</p></div></div><div class="wrap footer-base"><span>© 2026 MORU STUDIO</span><span>SEOUL, KOREA</span></div></footer><button class="top-button" type="button" aria-label="맨 위로 이동"><small>TOP</small></button>
+
+
+<dialog class="bag-dialog" id="bagDialog" aria-labelledby="bagTitle"><div class="bag-heading"><h2 id="bagTitle">장바구니</h2><button type="button" class="bag-close" id="closeBag">닫기</button></div><div class="bag-items" id="bagItems"></div><div class="bag-summary"><span>합계</span><strong id="bagTotal">₩0</strong></div><p class="bag-note">포트폴리오용 장바구니입니다. 실제 주문·결제는 진행되지 않습니다.</p><button type="button" class="bag-continue" id="continueShopping">계속 둘러보기</button></dialog><div class="cart-toast" id="cartToast" role="status" aria-live="polite" aria-atomic="true"><span>장바구니에 담겼습니다.</span><button type="button" id="toastViewBag">장바구니 보기</button></div>
+</body>
+
+</html>

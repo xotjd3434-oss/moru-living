@@ -1,0 +1,337 @@
+//1. SCSS - 변수 방식
+$bg: #f4f2ed; // 사이트 기본 배경색
+$text: #171714; // 기본 글자색
+$line: #d5d1c8; // 선 색상
+$dark: #181816; // 진한 배경색
+$white: #fff; // 흰색
+$gray: #76736c; // 보조 글자색
+$sectionBg: #e7e3da; // Journal 배경
+$collectionBg: #d7d0c3; // Collection 배경
+
+//2. header 
+.header {
+  position: static;
+  color: $dark;
+  border-color: rgba(0, 0, 0, .08)
+}
+
+//2. 상세페이지
+.detail-page {
+  padding-top: 70px;
+}
+
+//상품이미지 + 상품정보
+.product-detail {
+  display: grid;
+  grid-template-columns: 1.45fr 0.55fr;
+  gap: 60px;
+  padding-bottom: 140px;
+}
+
+//3. 상품이미지
+.detail-gallery {
+  &__main {
+    height: 720px;
+    background: #e6e1d8;
+  }
+}
+
+//작은 썸네일 이미지 목록
+.thumbs {
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  gap: 10px;
+  margin-top: 14px;
+}
+
+//각각의 썸네일
+.thumb {
+  height: 90px;
+  opacity: 0.5;
+  border: 1px solid transparent;
+  padding: 0;
+
+  &.active {
+    opacity: 1;
+    border-color: $text;
+  }
+}
+
+//4. 상품 정보 영역
+.detail-info {
+  padding-top: 70px;
+
+  //스크롤을 해도 정보가 일정위치에 고정
+  position: sticky;
+  gap: 30px;
+  align-items: start;
+
+  h1 {
+    font: 400 clamp(48px, 5vw, 74px)/1 'Manrope', sans-serif;
+    letter-spacing: -0.05em;
+  }
+}
+
+//가격
+.price {
+  margin: 20px 0 45px;
+  font-size: 16px;
+}
+
+//상품설명
+.desc {
+  font-size: 16px;
+  line-height: 1.8;
+  color: $dark;
+  font-weight: 300;
+}
+
+// ======================================================
+// 5. 상품 옵션
+// ======================================================
+
+.option {
+  margin-top: 42px;
+  padding: 22px 0;
+  border-top: 1px solid #cbc7bf;
+
+  p {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+
+    span {
+      float: right;
+      color: $gray;
+    }
+  }
+}
+
+
+// 컬러 선택 버튼 영역
+.swatches {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+
+// 컬러 선택 버튼
+.swatch {
+  width: 26px;
+  height: 26px;
+
+  border-radius: 50%;
+  border: 4px solid $bg;
+  outline: 1px solid transparent;
+
+  // class="swatch active"
+  &.active {
+    outline-color: $text;
+  }
+}
+
+
+// 각각의 색상
+.beige {
+  background: #c8b79e;
+}
+
+.gray {
+  background: #888783;
+}
+
+.brown {
+  background: #4b3c32;
+}
+
+
+// 장바구니 버튼
+.add-cart {
+  width: 100%;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  background: $text;
+  color: #fff;
+
+  font-size: 16px;
+  letter-spacing: 0.08em;
+}
+
+
+// ======================================================
+// 6. 상품 상세 정보 목록
+// ======================================================
+
+.detail-list {
+  margin-top: 30px;
+
+  div {
+    display: grid;
+    grid-template-columns: 115px 1fr;
+
+    padding: 15px 0;
+    border-bottom: 1px solid #d4d0c8;
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-right: 10px;
+
+  }
+
+  p {
+    font-size: 16px;
+    color: #66635d;
+  }
+}
+
+
+// ======================================================
+// 7. PRODUCT STORY
+// ======================================================
+
+.story {
+  background: $collectionBg;
+
+  // .story__head
+  &__head {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: end;
+    margin-bottom: 70px;
+
+    p {
+      max-width: 480px;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+  }
+
+  h2 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.055em;
+
+    font-size: clamp(58px, 7vw, 105px);
+    line-height: 0.9;
+  }
+
+  img {
+    height: 720px;
+  }
+}
+
+
+// ======================================================
+// 8. 관련 상품
+// ======================================================
+
+// 기존 style.scss의 .product-grid를 그대로 사용하고
+// sub 페이지에서는 3열로만 변경함
+.product-grid {
+
+  // BEM Modifier
+  // .product-grid--three로 컴파일됨
+  &--three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+// ======================================================
+// 9. TABLET
+// ======================================================
+
+@media (max-width: 1000px) {
+
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-info {
+    position: static;
+    padding-top: 0;
+    max-width: 700px;
+  }
+
+  .story {
+
+    &__head {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+}
+
+
+// ======================================================
+// 10. MOBILE
+// ======================================================
+
+@media (max-width: 720px) {
+
+  .detail-page {
+    padding-top: 35px;
+  }
+
+
+  .product-detail {
+    gap: 30px;
+    padding-bottom: 90px;
+  }
+
+
+  .detail-gallery {
+
+    &__main {
+      height: 500px;
+    }
+  }
+
+
+  .thumbs {
+    grid-template-columns: repeat(2, 90px);
+  }
+
+
+  .detail-info {
+    padding-top: 14px;
+  }
+
+
+  .story {
+
+    &__head {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 58px;
+    }
+
+    img {
+      height: 460px;
+    }
+  }
+
+
+  .product-grid {
+
+    &--three {
+      grid-template-columns: 1fr 1fr;
+
+      article {
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 720px) { .product-grid--three { grid-template-columns: 1fr; } .product-grid--three article:last-child { display: block; } .detail-gallery__main { height: auto; aspect-ratio: 4 / 5; } }

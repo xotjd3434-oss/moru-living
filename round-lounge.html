@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Round Lounge | MORU</title>
+  <link rel="preconnect" href="https://images.unsplash.com/">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/sub.css">
+  <link rel="icon" href="data:,">
+
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner wrap">
+      <a href="index.html" class="logo">MORU.</a>
+      <nav class="nav" id="nav">
+        <a href="index.html#new">NEW</a>
+        <a href="index.html#collection">COLLECTION</a>
+        <a href="index.html#journal">JOURNAL</a>
+      </nav>
+
+      <div class="header__right">
+        
+        <button type="button" class="cart" id="openBag" aria-haspopup="dialog" aria-controls="bagDialog">BAG <b>0</b></button>
+      </div>
+
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="detail-page">
+    <section class="product-detail wrap">
+
+      <!-- 왼쪽 이미지 영역 -->
+      <div class="detail-gallery">
+
+        <div class="detail-gallery__main">
+          <img id="mainImage"
+            src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1400&q=85"
+            alt="Round Lounge" />
+        </div>
+
+        <div class="thumbs">
+          <button class="thumb active"
+            data-image="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1400&q=85">
+
+            <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=400&q=80"
+              alt="Round Lounge 공간 연출 이미지" />
+          </button>
+
+          <button class="thumb"
+            data-image="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1400&q=85">
+
+            <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=400&q=80"
+              alt="Round Lounge 공간 연출 이미지" />
+          </button>
+        </div>
+
+      </div>
+
+      <!-- 오른쪽 상품정보 -->
+      <div class="detail-info">
+        <h1>Round Lounge</h1>
+
+        <p class="price">₩620,000</p>
+
+        <p class="desc">부드러운 곡선과 내추럴 오크의 따뜻함을 담은 라운지 체어입니다. 몸을 편안하게 감싸는 좌방석으로 일상 속 느긋한 휴식을 제안합니다.</p>
+
+        <div class="option">
+          <p>COLOR <span>Natural Oak</span></p>
+
+          <div class="swatches"><button type="button" class="swatch beige active" aria-label="Natural Oak" aria-pressed="true" style="background:#c4a578"></button></div>
+        </div>
+
+        <button class="add-cart" id="addCart">
+          ADD TO BAG
+          <span>₩620,000</span>
+        </button>
+
+        <div class="detail-list">
+          <div>
+            <span>SIZE</span>
+            <p>W 820 × D 850 × H 760 mm</p>
+          </div>
+
+          <div>
+            <span>MATERIAL</span>
+            <p>Oak wood, linen blend, high-density foam</p>
+          </div>
+
+          <div>
+            <span>DELIVERY</span>
+            <p>주문 후 약 2-3주 소요</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="story section">
+      <div class="wrap">
+        <div class="story__head"><h2>A pause,<br>made personal.</h2><p>공간 한편에서 나만의 시간을 보낼 수 있도록 부드러운 실루엣과 안정적인 비례를 생각했습니다. 린넨의 담백한 질감과 오크의 나뭇결이 편안한 분위기를 완성합니다.</p></div>
+        <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1800&q=85"
+          alt="Round Lounge 인테리어 연출" />
+      </div>
+    </section>
+
+
+    <section class="section related">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>Complete the room.</h2>
+          </div>
+        </div>
+        <div class="product-grid product-grid--three"><article class="product-card"><a href="sub.html"><div class="product-card__image"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=85" alt="Layer Sofa 공간 연출 이미지" loading="lazy"></div><div class="product-card__info"><div><h3>Layer Sofa</h3><p>Soft beige / Fabric</p></div><strong>₩1,280,000</strong></div></a></article><article class="product-card"><a href="form-chair.html"><div class="product-card__image"><img src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=900&q=85" alt="Form Chair 공간 연출 이미지" loading="lazy"></div><div class="product-card__info"><div><h3>Form Chair</h3><p>Oak / Ivory</p></div><strong>₩320,000</strong></div></a></article><article class="product-card"><a href="low-table.html"><div class="product-card__image"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Low Table 공간 연출 이미지" loading="lazy"></div><div class="product-card__info"><div><h3>Low Table</h3><p>Walnut / Steel</p></div><strong>₩490,000</strong></div></a></article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer"><div class="wrap footer-compact"><a class="footer-wordmark" href="index.html">MORU.</a><div class="footer-description"><p>Furniture for everyday life.</p><p>일상에 자연스럽게 스며드는 가구.<br>오래 머물고 싶은 공간을 만듭니다.</p></div></div><div class="wrap footer-base"><span>© 2026 MORU STUDIO</span><span>SEOUL, KOREA</span></div></footer><button class="top-button" type="button" aria-label="맨 위로 이동"><small>TOP</small></button>
+<dialog class="bag-dialog" id="bagDialog" aria-labelledby="bagTitle"><div class="bag-heading"><h2 id="bagTitle">장바구니</h2><button type="button" class="bag-close" id="closeBag">닫기</button></div><div class="bag-items" id="bagItems"></div><div class="bag-summary"><span>합계</span><strong id="bagTotal">₩0</strong></div><p class="bag-note">포트폴리오용 장바구니입니다. 실제 주문·결제는 진행되지 않습니다.</p><button type="button" class="bag-continue" id="continueShopping">계속 둘러보기</button></dialog><div class="cart-toast" id="cartToast" role="status" aria-live="polite" aria-atomic="true"><span>장바구니에 담겼습니다.</span><button type="button" id="toastViewBag">장바구니 보기</button></div>
+</body>
+
+</html>
